@@ -21,6 +21,9 @@ public class FrmArtículo extends javax.swing.JFrame {
     public FrmArtículo() {
         initComponents();
         cnt = new ControladorArticulo();
+        this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
+        
     }
 
     /**
@@ -59,6 +62,7 @@ public class FrmArtículo extends javax.swing.JFrame {
         txtpvMayor = new javax.swing.JTextField();
         txtpCompra = new javax.swing.JTextField();
         txtStock = new javax.swing.JTextField();
+        cmbArticulo = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -159,6 +163,9 @@ public class FrmArtículo extends javax.swing.JFrame {
         });
         getContentPane().add(txtpCompra, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 260, 80, -1));
         getContentPane().add(txtStock, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 290, 80, -1));
+
+        cmbArticulo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        getContentPane().add(cmbArticulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -289,6 +296,7 @@ public class FrmArtículo extends javax.swing.JFrame {
     private javax.swing.JButton btnModifica;
     private javax.swing.JButton btnMostrar;
     private javax.swing.JButton btnRegistra;
+    private javax.swing.JComboBox<String> cmbArticulo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

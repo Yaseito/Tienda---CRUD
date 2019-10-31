@@ -21,6 +21,8 @@ public class FrmDocumento extends javax.swing.JFrame {
     public FrmDocumento() {
         initComponents();
         cnt = new ControladorDocumento();
+        this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
     }
 
     /**

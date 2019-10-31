@@ -62,7 +62,7 @@ public class ModeloArticulo {
         try {
 
             ps = con.prepareStatement("select a.idArticulo, a.descripcion, a.descripcionIngles , m.idMedida , m.descripcion, m.siglas  , "
-                    + "m2.idMedida , m2.descripcion, m2.siglas  , a.cantidadUnidadMedidaCompra , a.precioVentaMayor , a.precioVentaMenor , a.stock"
+                    + "m2.idMedida , m2.descripcion, m2.siglas  , a.cantidadUnidadMedidaCompra , a.precioVentaMayor , a.precioVentaMenor , "
                     + "a.precioCompra , a.stock  from articulo a, medida m, medida m2"
                     + " where a.idUnidadMedidaCompra = m.idMedida and a.idUnidadMedidaVenta = m2.idMedida");
             rs = ps.executeQuery();
@@ -154,10 +154,10 @@ public class ModeloArticulo {
         Medida m1 = null;
         Medida m2 = null;
         try {
-            PreparedStatement ps = con.prepareStatement("\"select a.idArticulo, a.descripcion, a.descripcionIngles , m.idMedida , m.descripcion, m.siglas  , \"\n" +
-"                    + \"m2.idMedida , m2.descripcion, m2.siglas  , a.cantidadUnidadMedidaCompra , a.precioVentaMayor , a.precioVentaMenor , a.stock\"\n" +
-"                    + \"a.precioCompra , a.stock  from articulo a, medida m, medida m2\"\n" +
-"                    + \" where a.idUnidadMedidaCompra = m.idMedida and a.idUnidadMedidaVenta = m2.idMedida and idArticulo=" + idArticulo + ";");
+            PreparedStatement ps = con.prepareStatement("select a.idArticulo, a.descripcion, a.descripcionIngles , m.idMedida , m.descripcion, m.siglas  , " +
+                    " m2.idMedida , m2.descripcion, m2.siglas  , a.cantidadUnidadMedidaCompra , a.precioVentaMayor , a.precioVentaMenor ," +
+                    " a.precioCompra , a.stock  from articulo a, medida m, medida m2 " +
+                    " where a.idUnidadMedidaCompra = m.idMedida and a.idUnidadMedidaVenta = m2.idMedida and a.idArticulo=" + idArticulo + ";");
             rs = ps.executeQuery();
             while (rs.next()) {
 

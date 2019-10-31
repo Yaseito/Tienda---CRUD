@@ -26,9 +26,9 @@ public class Conexion {
             Class.forName("com.mysql.jdbc.Driver");
             //Conexion con la ruta de la BD
             con = DriverManager.getConnection("jdbc:mysql://localhost:3307/tienda3", "root", "patito_2010");
-            JOptionPane.showMessageDialog(null, "Conectado");
+         //   JOptionPane.showMessageDialog(null, "Conectado");
         } catch (Exception ex) {
-            JOptionPane.showMessageDialog(null, "Conexión fallida " + ex.getMessage());
+           // JOptionPane.showMessageDialog(null, "Conexión fallida " + ex.getMessage());
         }
         return con;
     }

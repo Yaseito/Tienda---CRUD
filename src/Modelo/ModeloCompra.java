@@ -145,10 +145,10 @@ public class ModeloCompra {
         Documento d = null;
         Proveedor p = null;
         try {
-            PreparedStatement ps = con.prepareStatement("\"select c.idCompra, d.idDocumento, d.descripcion, d.siglas, c.serieDocumento , "
+            PreparedStatement ps = con.prepareStatement("select c.idCompra, d.idDocumento, d.descripcion, d.siglas, c.serieDocumento , "
                     + "c.nroDocumento , c.fecha, p.idProveedor  , p.razonSocial  ,p.tipoPersona  ,p.nrodocumento  ,p.direccion  ,p.telefono "
                     + " from compra c, documento d, proveedor p"
-                    + " where c.idDocumento = d.idDocumento and c.idProveedor = p.idProveedor and idCompra=" + idCompra + ";");
+                    + " where c.idDocumento = d.idDocumento and c.idProveedor = p.idProveedor and c.idCompra=" + idCompra + ";");
             rs = ps.executeQuery();
             while (rs.next()) {
 

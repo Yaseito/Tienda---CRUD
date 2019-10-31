@@ -4,6 +4,30 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/F:/Tienda/src/Modelo/ModeloCompra.java</file>
+            <file>file:/F:/Tienda/src/Vista/FrmCliente.java</file>
+            <file>file:/F:/Tienda/src/Modelo/ModeloVenta.java</file>
+            <file>file:/F:/Tienda/src/Controlador/ControladorMedida.java</file>
+            <file>file:/F:/Tienda/src/Modelo/ModeloventaDetalle.java</file>
+            <file>file:/F:/Tienda/src/Vista/FrmDetalleVenta.java</file>
+            <file>file:/F:/Tienda/src/Vista/FrmProveedor.java</file>
+            <file>file:/F:/Tienda/src/Vista/FrmPrincipal.java</file>
+            <file>file:/F:/Tienda/src/Modelo/Conexion/Conexion.java</file>
+            <file>file:/F:/Tienda/src/Modelo/ModeloArticulo.java</file>
+            <file>file:/F:/Tienda/src/Vista/FrmDetalleCompra.java</file>
+            <file>file:/F:/Tienda/src/Modelo/ModeloCliente.java</file>
+            <file>file:/F:/Tienda/src/Controlador/ControladorDocumento.java</file>
+            <file>file:/F:/Tienda/src/Vista/FrmDocumento.java</file>
+            <file>file:/F:/Tienda/src/Modelo/ModeloMedida.java</file>
+            <file>file:/F:/Tienda/src/Modelo/ModeloDocumento.java</file>
+            <file>file:/F:/Tienda/src/Modelo/ModelocompraDetalle.java</file>
+            <file>file:/F:/Tienda/src/Controlador/ControladorArticulo.java</file>
+            <file>file:/F:/Tienda/src/Modelo/ModeloProveedor.java</file>
+            <file>file:/F:/Tienda/src/Controlador/ControladorCompra.java</file>
+            <file>file:/F:/Tienda/src/Vista/FrmCompra.java</file>
+            <file>file:/F:/Tienda/src/Vista/FrmMedida.java</file>
+            <file>file:/F:/Tienda/src/Vista/FrmArtículo.java</file>
+            <file>file:/F:/Tienda/src/Controlador/ControladorCliente.java</file>
+            <file>file:/F:/Tienda/src/Vista/FrmVenta.java</file>
         </group>
     </open-files>
 </project-private>

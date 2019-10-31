@@ -21,6 +21,8 @@ public class FrmProveedor extends javax.swing.JFrame {
     public FrmProveedor() {
         initComponents();
         cnt = new ControladorProveedor();
+        this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
     }
 
     /**

@@ -19,6 +19,8 @@ public class FrmMedida extends javax.swing.JFrame {
     public FrmMedida() {
         initComponents();
         cnt = new ControladorMedida();
+        this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
     }
 
     /**
